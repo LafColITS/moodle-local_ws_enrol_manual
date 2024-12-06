@@ -50,7 +50,7 @@ class manage {
         $fields = $params['params'];
 
         // Verify the course.
-        $course = $DB->get_record('course', array('id'=>$fields['courseid']), '*', MUST_EXIST);
+        $course = $DB->get_record('course', ['id '=> $fields['courseid']], '*', MUST_EXIST);
 
         $plugin = enrol_get_plugin('manual');
 

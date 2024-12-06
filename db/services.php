@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $functions = [
-    'local_ws_enrol_manual_add_instance' =>  [
+    'local_ws_enrol_manual_add_instance' => [
         'classname' => 'local_ws_enrol_manual_external',
         'methodname' => 'add_instance',
         'classpath' => 'local/ws_enrol_manual/externallib.php',

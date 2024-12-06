@@ -22,8 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
 use core_external\external_api;
 use core_external\external_function_parameters;
 use core_external\external_single_structure;
@@ -71,11 +69,16 @@ class local_ws_enrol_manual_external extends external_api {
         ];
     }
 
+    /**
+     * Returns description of add_instance_returns() result value.
+     *
+     * @return \external_description
+     */
     public static function add_instance_returns() {
         return new external_single_structure(
             [
                 'id' => new external_value(PARAM_INT, 'id of the created instance')
-            ]        
+            ]
         );
     }
 }
