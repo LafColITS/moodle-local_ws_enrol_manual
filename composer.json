@@ -1,0 +1,11 @@
+{
+    "name": "lafayette/local_ws_enrol_manual",
+    "type": "moodle-local",
+    "license": "GPL-2.0",
+    "require": {
+        "composer/installers": "^1.0 || ^2.0"
+    },
+    "extra": {
+        "installer-name": "ws_enrol_manual"
+    }
+}
