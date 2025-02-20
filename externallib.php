@@ -53,7 +53,7 @@ class local_ws_enrol_manual_external extends external_api {
                 'expirythreshold' => new external_value(PARAM_INT, 'Notification threshold', VALUE_DEFAULT, 86400),
                 'customint1' => new external_value(PARAM_INT, 'Send course welcome message', VALUE_DEFAULT, 1),
                 'customtext1' => new external_value(PARAM_RAW, 'Custom welcome message', VALUE_DEFAULT, null),
-            ])
+            ]),
         ]);
     }
 
@@ -77,7 +77,7 @@ class local_ws_enrol_manual_external extends external_api {
     public static function add_instance_returns() {
         return new external_single_structure(
             [
-                'id' => new external_value(PARAM_INT, 'id of the created instance')
+                'id' => new external_value(PARAM_INT, 'id of the created instance'),
             ]
         );
     }

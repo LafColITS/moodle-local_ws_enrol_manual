@@ -31,19 +31,19 @@ $functions = [
         'classpath' => 'local/ws_enrol_manual/externallib.php',
         'description' => 'Add manual enrolment instance',
         'type' => 'write',
-        'capabilities' => 'enrol/manual:config'
+        'capabilities' => 'enrol/manual:config',
     ],
 ];
 
 $services = [
     'ManualEnrollment' => [
         'functions' => [
-            'local_ws_enrol_manual_add_instance'
+            'local_ws_enrol_manual_add_instance',
         ],
         'restrictedusers' => 1,
         'enabled' => 0,
         'shortname' => 'local_ws_enrol_manual',
         'downloadfiles' => 0,
         'uploadfiles' => 0,
-    ]
-    ];
+    ],
+];
